@@ -1,0 +1,23 @@
+{
+    "name": "node-vantage",
+    "version": "0.0.1",
+    "description": "A simple Davis Vantage serial driver for Node.js",
+    "main": "driver.js",
+    "author": "Miguel Pérez",
+    "license": "MIT",
+    "dependencies": {
+        "serialport":  "1.4.*"
+    },
+    "tags": [
+        "davis",
+        "vantage",
+        "driver"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Kamugo/node-vantage.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Kamugo/node-vantage/issues"
+    }
+}

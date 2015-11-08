@@ -2,6 +2,11 @@
 
 **node-vantage** is a dead simple Davis Vantage driver for Node.js.
 
+## Installation
+```bash
+npm install node-vantage
+```
+
 ## How to use
 ```js
 var Driver = require("node-vantage");

@@ -5,12 +5,12 @@
 ## How to use
 ```js
 var Driver = require("node-vantage");
-var driver = new Driver();
+var vantage = new Driver();
 
-driver.on("connect", function(error) {
+vantage.on("connect", function(error) {
 	if (!error) {
         console.log("Connected to the Vantage");
-        driver.on("loop", function(loop) {
+        vantage.on("loop", function(loop) {
             console.log(loop);
         });
 	} else {

@@ -1,12 +1,12 @@
 {
     "name": "node-vantage",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A simple Davis Vantage serial driver for Node.js",
     "main": "driver.js",
     "author": "Miguel Pérez",
     "license": "MIT",
     "dependencies": {
-        "serialport":  "1.4.*"
+        "serialport":  "2.0.*"
     },
     "tags": [
         "davis",

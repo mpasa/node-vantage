@@ -107,8 +107,7 @@ function Driver() {
                 }, options.loopEvery);
             }
             driver.emit('connect', null);
-        }
-        else {
+        } else {
             driver.emit('connect', error);
         }
     });

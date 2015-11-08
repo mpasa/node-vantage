@@ -4,12 +4,18 @@
 
 ## How to use
 ```js
-var driver = require('node-vantage')();
-driver.on('connect', function() {
-  console.log('Connected to the Vantage');
-  driver.on('loop', function(loop) {
-    console.log(loop);
-  });
+var Driver = require("node-vantage");
+var driver = new Driver();
+
+driver.on("connect", function(error) {
+	if (!error) {
+        console.log("Connected to the Vantage");
+        driver.on("loop", function(loop) {
+            console.log(loop);
+        });
+	} else {
+        console.log("Failed connecting to the Vantage: " + error);
+	}
 });
 ```
 

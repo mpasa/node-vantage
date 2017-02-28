@@ -1,7 +1,7 @@
 var util         = require('util');
 var conversor    = require('./conversor');
 var EventEmitter = require('events').EventEmitter;
-var SerialPort   = require('serialport').SerialPort;
+var SerialPort   = require('serialport');
 
 /**
  * Parses a raw buffer from the Vantage an emits events depending on the nature of the buffer
@@ -58,9 +58,10 @@ function Driver() {
     };
 
     var vantage   = new SerialPort(options.port, {
+        autoOpen: false,
         baudrate: options.baudrate,
         parser:   parser
-    }, false);
+    });
 
     /**
      * Sends a command through the serial port to the station
